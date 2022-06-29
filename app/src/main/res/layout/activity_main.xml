@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/city"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/shop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#672CD5"
+        android:inputType="text"
+        android:onClick="goToSecond"
+        android:padding="10dp"
+        android:text="       VAULT (1K)             "
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        app:icon="@android:drawable/ic_lock_idle_lock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vacation_button"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/money_button"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="#071973"
+        android:onClick="getMoney"
+        android:padding="10dp"
+        android:text="          work                 "
+        android:textAlignment="center"
+        app:icon="@android:drawable/ic_dialog_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/moneyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Coins: "
+        android:textColor="#000000"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toStartOf="@+id/money"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/vacation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#1C64A5"
+        android:onClick="vacation"
+        android:padding="10dp"
+        android:text="     Vacation (20)        "
+        app:icon="@android:drawable/btn_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/money_button" />
+
+    <TextView
+        android:id="@+id/wage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="10"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/money" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wage: "
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/wage"
+        app:layout_constraintTop_toBottomOf="@+id/moneyTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
