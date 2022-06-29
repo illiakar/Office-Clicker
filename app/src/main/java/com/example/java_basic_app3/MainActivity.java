@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Not enough coins", Toast.LENGTH_LONG).show();
         }
     }
-    //a
+    //ab
     int maxWork = 0;
 
     int wage = 10;
