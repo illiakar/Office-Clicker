@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frag2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/bad_script"
+        android:text="Shop"
+        android:textColor="#FF309B"
+        android:textSize="45dp"
+        android:translationY="-170dp" />
+
+    <ImageView
+        android:id="@+id/shop1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:onClick="buyCandyBar"
+        android:src="@drawable/candybar"
+        android:translationX="-75dp"
+        android:translationY="-45dp"
+        android:contentDescription="Candy bar"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/shop2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:onClick="buyIceCream"
+        android:src="@drawable/icecream"
+        android:translationX="75dp"
+        android:contentDescription="Ice cream"
+        android:translationY="-45dp" />
+
+    <ImageView
+        android:id="@+id/shop3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:onClick="buyFruitCup"
+        android:src="@drawable/fruit"
+        android:translationX="-75dp"
+        android:contentDescription="Fruit cup"
+        android:translationY="125dp" />
+
+    <ImageView
+        android:id="@+id/shop4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:onClick="buyBrownies"
+        android:src="@drawable/brownies"
+        android:contentDescription="Brownies"
+        android:translationX="75dp"
+        android:translationY="125dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/black"
+        android:fontFamily="@font/bad_script"
+        android:text="  3 coins  "
+        android:textColor="#4CFF00"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:translationX="-75dp"
+        android:translationY="27dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/bad_script"
+        android:text="  5 coins  "
+        android:textColor="#4CFF00"
+        android:textStyle="bold"
+        android:background="@color/black"
+        android:textSize="20dp"
+        android:translationX="75dp"
+        android:translationY="27dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/bad_script"
+        android:text="  9 coins  "
+        android:background="@color/black"
+        android:textColor="#4CFF00"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:translationX="-75dp"
+        android:translationY="197dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/black"
+        android:fontFamily="@font/bad_script"
+        android:text="  7 coins  "
+        android:textColor="#4CFF00"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:translationX="75dp"
+        android:translationY="197dp" />
+
+</RelativeLayout>
