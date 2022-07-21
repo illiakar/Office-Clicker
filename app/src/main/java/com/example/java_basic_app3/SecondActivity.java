@@ -16,17 +16,16 @@ import android.widget.Toast;
 public class SecondActivity extends AppCompatActivity {
 
     Button firstFragmentBtn, secondFragmentBtn;
-
     static Integer coinCount = 0;
-
     static Integer wage = 10;
-
     static Integer vaultOpen = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+
         Intent myI = getIntent();
         coinCount = Integer.parseInt(myI.getStringExtra("COINS"));
 
@@ -37,14 +36,12 @@ public class SecondActivity extends AppCompatActivity {
         ((TextView) findViewById(R.id.money2)).setText(coinCount.toString());
 
         wage = Integer.parseInt(myI.getStringExtra("WAGE"));
-
         vaultOpen = Integer.parseInt(myI.getStringExtra("VAULT"));
-
         firstFragmentBtn = findViewById(R.id.fragment1_button);
-
         secondFragmentBtn = findViewById(R.id.fragment2_button);
 
         replaceFrag(new frag1());
+
 
         firstFragmentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +51,7 @@ public class SecondActivity extends AppCompatActivity {
 
             }
         });
+
 
         secondFragmentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +63,7 @@ public class SecondActivity extends AppCompatActivity {
         });
     }
 
+
     private void replaceFrag(Fragment fragment) {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -74,13 +73,16 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+
     public void goToMain(View v) {
+
         Intent myAct = new Intent(this, MainActivity.class);
         startActivity(myAct);
 
         vaultOpen = 0;
 
     }
+
 
     public void goToWork(View v) {
 
@@ -89,13 +91,14 @@ public class SecondActivity extends AppCompatActivity {
         Intent myAct = new Intent(this, MainActivity.class);
         startActivity(myAct);
 
-
-
     }
 
+
     public void buyCandyBar(View v) {
+
         String countString = ((TextView) findViewById(R.id.money2)).getText().toString();
         Integer count = Integer.parseInt(countString);
+
         if (count >= 3) {
             Toast.makeText(this, "Thank you for your purchase!", Toast.LENGTH_LONG).show();
             count -= 3;
@@ -106,9 +109,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+
     public void buyIceCream(View v) {
+
         String countString = ((TextView) findViewById(R.id.money2)).getText().toString();
         Integer count = Integer.parseInt(countString);
+
         if (count >= 5) {
             Toast.makeText(this, "Thank you for your purchase!", Toast.LENGTH_LONG).show();
             count -= 5;
@@ -116,11 +122,15 @@ public class SecondActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Not enough coins", Toast.LENGTH_LONG).show();
         }
+
     }
 
+
     public void buyFruitCup(View v) {
+
         String countString = ((TextView) findViewById(R.id.money2)).getText().toString();
         Integer count = Integer.parseInt(countString);
+
         if (count >= 9) {
             Toast.makeText(this, "Thank you for your purchase!", Toast.LENGTH_LONG).show();
             count -= 9;
@@ -128,11 +138,15 @@ public class SecondActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Not enough coins", Toast.LENGTH_LONG).show();
         }
+
     }
 
+
     public void buyBrownies(View v) {
+
         String countString = ((TextView) findViewById(R.id.money2)).getText().toString();
         Integer count = Integer.parseInt(countString);
+
         if (count >= 7) {
             Toast.makeText(this, "Thank you for your purchase!", Toast.LENGTH_LONG).show();
             count -= 7;

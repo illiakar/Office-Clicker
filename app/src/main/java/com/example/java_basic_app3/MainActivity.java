@@ -13,13 +13,12 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     Integer vaultOpened = 0;
-
     int maxWork = 0;
-
     int wage = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -28,17 +27,14 @@ public class MainActivity extends AppCompatActivity {
             ((TextView) findViewById(R.id.money)).setText(SecondActivity.coinCount.toString());
             ((TextView) findViewById(R.id.wage)).setText(SecondActivity.wage.toString());
             ((TextView) findViewById(R.id.shop_button)).setText("        VAULT (0)              ");
-        } else {
-            //pass
         }
     }
 
+
     public void goToSecond(View v) {
+
         String countString = ((TextView) findViewById(R.id.money)).getText().toString();
         Integer count = Integer.parseInt(countString);
-        if (SecondActivity.vaultOpen == 1) {
-            //pass
-        }
 
         if (SecondActivity.vaultOpen == 1) {
             vaultOpened++;
@@ -65,10 +61,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
     public void getMoney(View v) {
 
         if (maxWork < 9) {
-
             int wageIncrease = (int)(Math.random() * 7);
 
             if (wageIncrease == 1) {
@@ -81,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
             String countString = ((TextView) findViewById(R.id.money)).getText().toString();
             Integer count = Integer.parseInt(countString);
             count += wage;
-
             ((TextView) findViewById(R.id.money)).setText(count.toString());
             maxWork++;
         } else {
@@ -96,13 +91,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
     public void vacation(View v) {
+
         String countString = ((TextView) findViewById(R.id.money)).getText().toString();
         Integer count = Integer.parseInt(countString);
+
         if (count >= 20) {
             count -= 20;
             ((TextView) findViewById(R.id.money)).setText(count.toString());
-
             maxWork = 0;
             findViewById(R.id.money_button).setEnabled(true);
             Toast.makeText(this, "You went on vacation", Toast.LENGTH_LONG).show();
