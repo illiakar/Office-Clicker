@@ -46,32 +46,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
-        android:id="@+id/fragment1_button"
-        android:layout_width="212dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="-5dp"
-        android:layout_marginBottom="-6dp"
-        android:backgroundTint="#1E1E1E"
-        android:padding="17dp"
-        android:text="End Screen"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/fragment2_button"
-        android:layout_width="212dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="-5dp"
-        android:layout_marginBottom="-6dp"
-        android:backgroundTint="#1E1E1E"
-        android:padding="17dp"
-        android:text="   Shop   "
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <FrameLayout
         android:id="@+id/framelayout"
         android:layout_width="409dp"
@@ -82,5 +56,27 @@
         app:layout_constraintStart_toStartOf="parent">
 
     </FrameLayout>
+
+    <Button
+        android:id="@+id/fragment1_button"
+        android:layout_width="206dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="-8dp"
+        android:backgroundTint="#232323"
+        android:text="End Screen"
+        app:icon="@drawable/ic_baseline_stars_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fragment2_button"
+        android:layout_width="206dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="-8dp"
+        android:backgroundTint="#232323"
+        android:text="Shop"
+        app:icon="@drawable/ic_baseline_shopping_bag_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
